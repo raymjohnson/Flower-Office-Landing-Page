@@ -1,2 +1,2 @@
 # Flower-Office-Landing-Page
-Timer sequence 
+Hold page for Flower Office store. Loading animation created using SVG's and jQuery.
