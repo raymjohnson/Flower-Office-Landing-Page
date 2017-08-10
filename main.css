@@ -1,0 +1,144 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------------------
+          Custom CSS
+------------------------------------------------------*/
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container{
+    height: 65vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    min-width: 250px;
+}
+
+#pink path, #pink polyline, #pink line{
+    stroke: #FCBFC9;
+}
+
+.layer_1, .layer_2, .layer_3, .layer_4, .layer_5, .layer_6 {
+    height: 100%;
+    display: block;
+    width: 100%;
+}
+
+#pink.layer_1 polyline.fuck, #pink.layer_1 line.off {
+    stroke: none!important;
+}
+
+.seeya {
+    display: none;
+}
+
+ul{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+li{
+    display: inline;
+    padding-right: 5px;
+}
+
+li:last-child{
+    padding-right: 0px;
+}
+
+a{
+    font-size: 25px;
+    color: #FCBFC9;
+} 
+
+.grow{ 
+	-webkit-transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out; 
+}
+
+.grow:hover{ 
+	-webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+}
+
+@media (max-width:756px){
+    html, body {
+        overflow: hidden;
+    }
+
+    body {
+        position: relative;
+    }
+    .image-container{
+        max-height: 370px;
+        height: 100%;
+        position: fixed;
+        overflow: hidden;
+    }
+    .grow:hover{
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+@media (min-width:1400px){
+    a{
+        font-size: 30px;
+    }
+}
