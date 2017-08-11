@@ -48,7 +48,7 @@ table {
 }
 
 /*-----------------------------------------------------
-          Custom CSS
+    Custom CSS
 ------------------------------------------------------*/
 .wrapper{
     height: 100vh;
@@ -67,7 +67,7 @@ table {
     min-width: 250px;
 }
 
-#pink path, #pink polyline, #pink line{
+.pink path, .pink polyline, .pink line{
     stroke: #FCBFC9;
 }
 
@@ -77,7 +77,7 @@ table {
     width: 100%;
 }
 
-#pink.layer_1 polyline.fuck, #pink.layer_1 line.off {
+.pink.layer_1 polyline.fix, .pink.layer_1 line.off {
     stroke: none!important;
 }
 
